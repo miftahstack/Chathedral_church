@@ -473,12 +473,14 @@ li:hover {
     padding: 0 140px;
 }
 
-.b01 p {
+.b01  {
     padding-right: 80px;
+    padding-top: 120px;
 }
 
 .b02 {
     padding-left: 80px;
+    padding-top: 120px;
 }
 
 .c1 {
