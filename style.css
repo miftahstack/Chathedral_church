@@ -1,4 +1,7 @@
 /* Common CSS Start */
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IN:wght@100..400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -43,13 +46,23 @@ li:hover {
 
 /* Common CSS End */
 
+
+#read{
+    color: #e4b855;
+    transition: 0.4s;
+}
+#read:hover{
+    color: rgb(0, 0, 0);
+}
+
 .menu {
     height: 115px;
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.705);
     position: fixed;
+    z-index: 10;
 
 
 }
@@ -217,12 +230,14 @@ li:hover {
     background-repeat: no-repeat;
     background-position: center;
 
+
 }
 
 .overly2 {
-    height: 550px;
+    height: 675px;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
+    padding-bottom: 100px;
 
 
 }
@@ -432,17 +447,23 @@ li:hover {
 
 }
 
-.h11 {
+/* Who Starts */
+
+/* whoHeading start */
+.whoheading {
     text-align: center;
     margin-top: 160px;
 }
 
-.h11 img {
-    text-align: center;
+.whoheading img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 15%;
+    margin-left: 42%;
 }
 
-.h11 p {
+.whoheading p {
     text-align: center;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 19.6px;
@@ -451,39 +472,58 @@ li:hover {
     color: #606060;
     padding: 20px 370px 100px;
 }
+/* whoHeading End */
 
-.b11 {
+/* whoBody Start */
+
+.whocontainer{
     position: relative;
+
 }
 
-.b111 {
+.whocontainer1 {
     display: flex;
     padding: 0 140px;
 
-}
-
-.b11 p {
-    padding-right: 80px;
-
 
 }
 
-.b222 {
-    display: flex;
-    padding: 0 140px;
-}
-
-.b01  {
+.whobody1  {
     padding-right: 80px;
     padding-top: 120px;
 }
+.whobody1  p{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 19.6px;
+    font-weight: 300;
+    line-height: 24.704px;
+    color: #606060;
+}
 
-.b02 {
+
+.whocontainer2 {
+    display: flex;
+    padding: 0 140px;
+}
+
+
+.whobody2 {
     padding-left: 80px;
     padding-top: 120px;
+    
+    
+}
+.whobody2 p{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 19.6px;
+    font-weight: 300;
+    line-height: 24.704px;
+    color: #606060;
+    
+    
 }
 
-.c1 {
+.whocontainer3 {
     height: 200px;
     width: 200px;
     background: #e4b855;
@@ -497,11 +537,187 @@ li:hover {
     transform: translate(-50%, -50%);
     
 }
-.c1 h2{
+
+.whocontainer3 h2{
     justify-content: center;
     align-items: center;
     margin-top: 40%;
     color: white;
     font-size: 30px;
     
+}
+/* whoBody Ends */
+/* Who Ends */
+
+/* Sermons Start */
+
+.sermonsheading h1{
+    text-align: center;
+    margin-top: 150px;
+}
+.sermonsheading p {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 19.6px;
+    font-weight: 300;
+    line-height: 24.704px;
+    color: #606060;
+    padding: 20px 370px 0px;
+}
+.sermonsheading img{
+    width: 15%;
+    margin-left: 42%;
+    
+}
+
+.sermonscontainer{
+    display: flex;
+    gap: 4%;
+}
+
+.simg1{
+height: 700px;
+width:700px;
+background-image: url(images/sermons-01.jpg);
+position: relative;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;  
+}
+
+
+.simg2{
+    
+    height:700px;
+    width: 700px;
+    background-image: url(images/sermons-02.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+.soverly1{
+    height: 50px;
+    width: 650;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+}
+
+/* Sermons Ends */
+
+/* News Start */
+.newsheading{
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+ 
+}
+.newsheading img{
+    width: 15%;
+}
+
+.newsheading p{
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 19.6px;
+    font-weight: 300;
+    line-height: 24.704px;
+    color: #606060;
+    padding: 20px 370px 80px;
+}
+
+.newscontainer{
+padding: 0 142.5px;
+align-items: center;
+}
+
+.newsbody1{
+    /* padding-right: 280px; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.newsbody2{
+    /* padding-right: 280px; */
+    display: flex;
+    align-items: center;
+    
+}
+.news1{
+flex-direction: row-reverse;
+padding-left: 30px;
+padding-right: 30px;
+    
+}
+.news1 p{
+flex-direction: row-reverse;
+font-family: "Source Sans Pro", sans-serif;
+font-size: 19.6px;
+font-weight: 300;
+line-height: 24.704px;
+color: #606060;
+    
+}
+.news2{
+flex-direction: row-reverse;
+padding-right: 30px;
+    
+}
+.news2 p{
+flex-direction: row-reverse;
+font-family: "Source Sans Pro", sans-serif;
+font-size: 19.6px;
+font-weight: 300;
+line-height: 24.704px;
+color: #606060;
+    
+}
+
+.event{
+    background-image: url(images/pastor-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+}
+
+.eventoverly{
+   margin-top: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 650px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.eventoverly h1{
+padding: 30px 140px;
+width: 1000px;
+   height: 350px;
+border: 2px solid white;
+    color: #fff;
+    text-align: center;
+    font-family: cursive;
+
+    
+}
+.eventoverly span{
+    color: #e4b855;
+    text-align: center;
+    font-family: cursive;
+    font-size: 60px;
+
+}
+#one2{
+    color: #e4b855;
+    text-align: center;
+    font-size: 16px;
+    font-family: monospace;
+
 }
